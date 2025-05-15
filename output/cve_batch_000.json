@@ -1,0 +1,328 @@
+[
+  {
+    "cveId": "CVE-2025-0001",
+    "status": "PUBLISHED",
+    "publishedDate": "2025-02-17T09:29:49.551Z",
+    "updatedDate": "2025-02-18T19:31:29.625Z",
+    "affectedProduct": "Abacus",
+    "vendor": "Abacus Research AG",
+    "maxAffectedVersion": "N/A",
+    "description": "Abacus ERP is versions older than 2024.210.16036, 2023.205.15833, 2022.105.15542 are affected by an authenticated arbitrary file read vulnerability.",
+    "cweId": "CWE-36",
+    "cweDescription": "CWE-36: Absolute Path Traversal",
+    "cvssScore": "6.5",
+    "cvssSeverity": "MEDIUM",
+    "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "sourceFolder": "D:\\信息安全作品赛\\cvelistV5-main\\cvelistV5-main\\cves\\2025\\0xxx",
+    "sourceFile": "CVE-2025-0001.json",
+    "extracted_entities": {
+      "vulnerability": [
+        "authenticated arbitrary file read vulnerability"
+      ],
+      "vendor": [
+        "Abacus"
+      ],
+      "product": [
+        "Abacus ERP"
+      ],
+      "malware": [],
+      "technique": [
+        "arbitrary file read"
+      ],
+      "exploit": [],
+      "mitigation": []
+    },
+    "extracted_relations": [
+      {
+        "subject": "Abacus ERP versions older than 2024.210.16036",
+        "relation": "affected_by",
+        "object": "authenticated arbitrary file read vulnerability"
+      },
+      {
+        "subject": "Abacus ERP versions older than 2023.205.15833",
+        "relation": "affected_by",
+        "object": "authenticated arbitrary file read vulnerability"
+      },
+      {
+        "subject": "Abacus ERP versions older than 2022.105.15542",
+        "relation": "affected_by",
+        "object": "authenticated arbitrary file read vulnerability"
+      }
+    ]
+  },
+  {
+    "cveId": "CVE-2025-0014",
+    "status": "PUBLISHED",
+    "publishedDate": "2025-04-02T16:14:00.258Z",
+    "updatedDate": "2025-04-02T16:31:56.219Z",
+    "affectedProduct": "AMD Ryzen? AI Software",
+    "vendor": "AMD",
+    "maxAffectedVersion": "N/A",
+    "description": "Incorrect default permissions on the AMD Ryzen(TM) AI installation folder could allow an attacker to achieve privilege escalation, potentially resulting in arbitrary code execution.",
+    "cweId": "CWE-276",
+    "cweDescription": "CWE-276 Incorrect Default Permissions",
+    "cvssScore": "7.3",
+    "cvssSeverity": "HIGH",
+    "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+    "sourceFolder": "D:\\信息安全作品赛\\cvelistV5-main\\cvelistV5-main\\cves\\2025\\0xxx",
+    "sourceFile": "CVE-2025-0014.json",
+    "extracted_entities": {
+      "vulnerability": [
+        "Incorrect default permissions"
+      ],
+      "vendor": [
+        "AMD"
+      ],
+      "product": [
+        "Ryzen AI"
+      ],
+      "malware": [],
+      "technique": [
+        "Privilege escalation",
+        "Arbitrary code execution"
+      ],
+      "exploit": [],
+      "mitigation": []
+    },
+    "extracted_relations": [
+      {
+        "subject": "Incorrect default permissions",
+        "relation": "could allow",
+        "object": "attacker to achieve privilege escalation"
+      },
+      {
+        "subject": "privilege escalation",
+        "relation": "potentially resulting in",
+        "object": "arbitrary code execution"
+      }
+    ]
+  },
+  {
+    "cveId": "CVE-2025-0015",
+    "status": "PUBLISHED",
+    "publishedDate": "2025-02-03T10:21:12.696Z",
+    "updatedDate": "2025-02-03T15:49:50.132Z",
+    "affectedProduct": "Valhall GPU Kernel Driver",
+    "vendor": "Arm Ltd",
+    "maxAffectedVersion": "r49p1",
+    "description": "Use After Free vulnerability in Arm Ltd Valhall GPU Kernel Driver, Arm Ltd Arm 5th Gen GPU Architecture Kernel Driver allows a local non-privileged user process to make improper GPU processing operations to gain access to already freed memory.This issue affects Valhall GPU Kernel Driver: from r48p0 through r49p1, from r50p0 through r52p0; Arm 5th Gen GPU Architecture Kernel Driver: from r48p0 through r49p1, from r50p0 through r52p0.",
+    "cweId": "CWE-416",
+    "cweDescription": "CWE-416 Use After Free",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "cvssVector": "N/A",
+    "sourceFolder": "D:\\信息安全作品赛\\cvelistV5-main\\cvelistV5-main\\cves\\2025\\0xxx",
+    "sourceFile": "CVE-2025-0015.json",
+    "extracted_entities": {
+      "vulnerability": [
+        "Use After Free"
+      ],
+      "vendor": [
+        "Arm Ltd"
+      ],
+      "product": [
+        "Valhall GPU Kernel Driver",
+        "Arm 5th Gen GPU Architecture Kernel Driver"
+      ],
+      "malware": [],
+      "technique": [
+        "improper GPU processing operations",
+        "access to already freed memory"
+      ],
+      "exploit": [
+        "local non-privileged user process"
+      ],
+      "mitigation": []
+    },
+    "extracted_relations": [
+      {
+        "subject": "Use After Free vulnerability",
+        "relation": "exists_in",
+        "object": "Arm Ltd Valhall GPU Kernel Driver"
+      },
+      {
+        "subject": "Use After Free vulnerability",
+        "relation": "exists_in",
+        "object": "Arm Ltd Arm 5th Gen GPU Architecture Kernel Driver"
+      },
+      {
+        "subject": "local non-privileged user process",
+        "relation": "exploits",
+        "object": "Use After Free vulnerability"
+      },
+      {
+        "subject": "local non-privileged user process",
+        "relation": "performs",
+        "object": "improper GPU processing operations"
+      },
+      {
+        "subject": "improper GPU processing operations",
+        "relation": "results_in",
+        "object": "access to already freed memory"
+      },
+      {
+        "subject": "Valhall GPU Kernel Driver",
+        "relation": "affected_versions",
+        "object": "from r48p0 through r49p1, from r50p0 through r52p0"
+      },
+      {
+        "subject": "Arm 5th Gen GPU Architecture Kernel Driver",
+        "relation": "affected_versions",
+        "object": "from r48p0 through r49p1, from r50p0 through r52p0"
+      }
+    ]
+  },
+  {
+    "cveId": "CVE-2025-0050",
+    "status": "PUBLISHED",
+    "publishedDate": "2025-04-07T12:02:02.367Z",
+    "updatedDate": "2025-04-10T14:06:48.933Z",
+    "affectedProduct": "Valhall GPU Userspace  Driver",
+    "vendor": "Arm Ltd",
+    "maxAffectedVersion": "r49p2",
+    "description": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in Arm Ltd Bifrost GPU Userspace Driver, Arm Ltd Valhall GPU Userspace Driver, Arm Ltd Arm 5th Gen GPU Architecture Userspace Driver allows a non-privileged user process to make valid GPU processing operations, including via WebGL or WebGPU, to access a limited amount outside of buffer bounds.This issue affects Bifrost GPU Userspace Driver: from r0p0 through r49p2, from r50p0 through r51p0; Valhall GPU Userspace Driver: from r19p0 through r49p2, from r50p0 through r53p0; Arm 5th Gen GPU Architecture Userspace Driver: from r41p0 through r49p2, from r50p0 through r53p0.",
+    "cweId": "CWE-119",
+    "cweDescription": "CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "cvssVector": "N/A",
+    "sourceFolder": "D:\\信息安全作品赛\\cvelistV5-main\\cvelistV5-main\\cves\\2025\\0xxx",
+    "sourceFile": "CVE-2025-0050.json",
+    "extracted_entities": {
+      "vulnerability": [
+        "Improper Restriction of Operations within the Bounds of a Memory Buffer"
+      ],
+      "vendor": [
+        "Arm Ltd"
+      ],
+      "product": [
+        "Bifrost GPU Userspace Driver",
+        "Valhall GPU Userspace Driver",
+        "Arm 5th Gen GPU Architecture Userspace Driver"
+      ],
+      "malware": [],
+      "technique": [
+        "Access outside of buffer bounds via valid GPU processing operations"
+      ],
+      "exploit": [
+        "Non-privileged user process can exploit through WebGL or WebGPU"
+      ],
+      "mitigation": []
+    },
+    "extracted_relations": [
+      {
+        "subject": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability",
+        "relation": "exists_in",
+        "object": "Arm Ltd Bifrost GPU Userspace Driver"
+      },
+      {
+        "subject": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability",
+        "relation": "exists_in",
+        "object": "Arm Ltd Valhall GPU Userspace Driver"
+      },
+      {
+        "subject": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability",
+        "relation": "exists_in",
+        "object": "Arm Ltd Arm 5th Gen GPU Architecture Userspace Driver"
+      },
+      {
+        "subject": "non-privileged user process",
+        "relation": "can_exploit",
+        "object": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability"
+      },
+      {
+        "subject": "non-privileged user process",
+        "relation": "can_perform",
+        "object": "valid GPU processing operations"
+      },
+      {
+        "subject": "valid GPU processing operations",
+        "relation": "include",
+        "object": "WebGL or WebGPU"
+      },
+      {
+        "subject": "valid GPU processing operations",
+        "relation": "leads_to",
+        "object": "access outside of buffer bounds"
+      },
+      {
+        "subject": "Bifrost GPU Userspace Driver",
+        "relation": "affected_versions",
+        "object": "from r0p0 through r49p2, from r50p0 through r51p0"
+      },
+      {
+        "subject": "Valhall GPU Userspace Driver",
+        "relation": "affected_versions",
+        "object": "from r19p0 through r49p2, from r50p0 through r53p0"
+      },
+      {
+        "subject": "Arm 5th Gen GPU Architecture Userspace Driver",
+        "relation": "affected_versions",
+        "object": "from r41p0 through r49p2, from r50p0 through r53p0"
+      }
+    ]
+  },
+  {
+    "cveId": "CVE-2025-0053",
+    "status": "PUBLISHED",
+    "publishedDate": "2025-01-14T00:08:21.600Z",
+    "updatedDate": "2025-01-14T15:01:44.276Z",
+    "affectedProduct": "SAP NetWeaver Application Server for ABAP and ABAP Platform",
+    "vendor": "SAP_SE",
+    "maxAffectedVersion": "N/A",
+    "description": "SAP NetWeaver Application Server for ABAP and ABAP Platform allows an attacker to gain unauthorized access to system information. By using a specific URL parameter, an unauthenticated attacker could retrieve details such as system configuration. This has a limited impact on the confidentiality of the application and may be leveraged to facilitate further attacks or exploits.",
+    "cweId": "CWE-209",
+    "cweDescription": "CWE-209: Generation of Error Message Containing Sensitive Information",
+    "cvssScore": "5.3",
+    "cvssSeverity": "MEDIUM",
+    "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "sourceFolder": "D:\\信息安全作品赛\\cvelistV5-main\\cvelistV5-main\\cves\\2025\\0xxx",
+    "sourceFile": "CVE-2025-0053.json",
+    "extracted_entities": {
+      "vulnerability": [
+        "Unauthorized access to system information via specific URL parameter in SAP NetWeaver Application Server for ABAP and ABAP Platform"
+      ],
+      "vendor": [
+        "SAP"
+      ],
+      "product": [
+        "NetWeaver Application Server for ABAP",
+        "ABAP Platform"
+      ],
+      "malware": [],
+      "technique": [
+        "Unauthenticated access using specific URL parameter"
+      ],
+      "exploit": [
+        "Retrieving system configuration details through unauthenticated access"
+      ],
+      "mitigation": [
+        "Restrict unauthenticated access to sensitive system information",
+        "Validate and sanitize URL parameters",
+        "Implement proper authentication and authorization mechanisms"
+      ]
+    },
+    "extracted_relations": [
+      {
+        "subject": "specific URL parameter",
+        "relation": "allows retrieval of",
+        "object": "system configuration details"
+      },
+      {
+        "subject": "unauthenticated attacker",
+        "relation": "uses",
+        "object": "specific URL parameter"
+      },
+      {
+        "subject": "unauthorized access to system information",
+        "relation": "leads to",
+        "object": "limited impact on confidentiality"
+      },
+      {
+        "subject": "limited impact on confidentiality",
+        "relation": "may facilitate",
+        "object": "further attacks or exploits"
+      }
+    ]
+  }
+]
